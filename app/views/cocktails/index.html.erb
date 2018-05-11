@@ -1,0 +1,7 @@
+<h1>Mister Cock/Tail</h1>
+<%= link_to "Register a cocktail", new_cocktail_path %>
+<div class="container">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card" style="width: 18rem"> <%= link_to cocktail.name, cocktail_path(cocktail)%> </div>
+  <% end %>
+</div>
